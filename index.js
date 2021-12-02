@@ -25,6 +25,14 @@ app.get('/account',(req,res)=>{
     });
     
 })
+app.get('/inbox',(req,res)=>{
+    fetch('https://api.mail.tm/messages?page=1',{
+        method:'GET',
+        headers:{'accept':'application/ld+json','Authorization':req.headers.authorization},
+    }).then(res=>res.json()).then(data=>{
+        return res.json(data);
+    });
+})
 app.post('/account/:qtd',async (req,res)=>{
     const quantity = req.params.qtd;
     if(quantity>5){
