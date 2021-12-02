@@ -1,0 +1,15 @@
+{
+  "name": "desafio-dopster",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "type":"module",
+  "scripts": {
+    "dev": "nodemon index.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "node-fetch": "^3.1.0"
+  }
+}
