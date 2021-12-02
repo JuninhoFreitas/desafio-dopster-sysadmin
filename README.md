@@ -108,6 +108,21 @@ Response:
 }
 
 ```
+
+# Inbox
+Ler caixa de email
+```
+url: /inbox
+method: GET
+header: {"accept":"application/json","Authorization":"XYZ"},
+
+Response:
+{
+"data":"..."
+}
+
+```
+
 ## Author
 
 👤 **Juninho Freitas**
